@@ -93,12 +93,15 @@
                 "mouseup",
                 "touchcancel",
                 "touchend",
+                "touchenter",
+                "touchleave",
                 "touchmove",
                 "touchstart"
             ];
             events.forEach(eventName => {
                 $eventDiv.on(eventName, e => {
                     AddResultText(eventName + "\n");
+                    console.log(eventName);
                 });
             });
         });
